@@ -39,7 +39,10 @@ h2 {
     border: none;
 }
 
-
+.edge {
+    background-color: #A9CCE3;
+    border: 1px solid #D2B4DE;
+}
 
 .text {
     color: #fff;
