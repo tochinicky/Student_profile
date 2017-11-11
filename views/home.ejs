@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+<h2>Student Details</h2>
+<div class="container">
+    <% students.forEach(function(student){ %>
+        <div class="jumbotron edge">
+            <div class="row">
+		        <div class="col-lg-6 col-md-4 col-sm-6">
+		            <h3>Name: <%= student.name %></h3>
+		            <h3>Email: <%= student.email %></h3>
+		            <h3>Age: <%= student.age %></h3>
+		            <h3>Gender: <%= student.gender %></h3>
+		        </div>
+		        <div class="col-lg-6 col-md-4 col-sm-6 thumbnail">
+		            <img src="<%= student.image %>">
+		        </div>
+		    </div>
+	        <div>
+	        	<a id="link" class="btn btn-default" href="/home/<%= student._id %>/edit" role="button">Edit</a>
+	        	<form id="delete" action="/home/<%= student._id %>?_method=DELETE" method="POST">
+					<button class="btn btn-default">Delete</button>
+				</form>
+	        </div>
+        </div>
+        <br />
+    <% }) %>
+</div>
+
+
+<% include ./partials/footer %>

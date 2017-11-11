@@ -1,0 +1,27 @@
+{
+  "name": "student_resource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/www.github.com/jherey.git"
+  },
+  "author": "Jeremiah Olufayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/www.github.com/jherey/issues"
+  },
+  "homepage": "https://github.com/www.github.com/jherey#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-sanitizer": "^1.0.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.12.3"
+  }
+}

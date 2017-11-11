@@ -1,0 +1,40 @@
+<% include ./partials/header %>
+
+    <h2>Edit Details</h2>
+    <div class="container">
+        <div class="jumbotron edge">
+            <form action="/home/<%= student._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="student[name]" value="<%= student.name %>">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="text" class="form-control" id="name" name="student[email]" value="<%= student.email %>">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="age" name="student[age]" value="<%= student.age %>">
+                </div>
+                <div class="form-group">
+                    <label for="image">Image</label>
+                    <input type="text" class="form-control" id="image" name="student[image]" value="<%= student.image %>">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" name="student[gender]" type="radio" value="<%= student.gender %>"> Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" name="student[gender]" type="radio" value="<%= student.gender %>"> Female
+                    </label>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+<% include ./partials/footer %>

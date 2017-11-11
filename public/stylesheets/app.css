@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCLgmTCPTfV7eJ5UYfdOYaIRQ1DFC3ANQ9M5TMeD-D8BGwqxAkg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron {
+    max-width: 60%;  
+    margin: auto;
+    border: none;
+}
+
+h2 {
+    color: #A9CCE3;
+    text-align: center;
+}
+
+#delete {
+    display: inline-block; 
+    margin-right: 20%;
+}
+
+#reg {
+    size: 2.5em;
+}
+
+#link {
+    margin-left: 40%;
+}
+
+.thumbnail {
+    background-color: #A9CCE3;
+    border: none;
+}
+
+.navbar {
+    background-color: steelblue;
+    border: none;
+}
+
+
+
+.text {
+    color: #fff;
+}
+
+.container.main {
+    margin-top: 7em;
+}
