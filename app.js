@@ -5,7 +5,7 @@ var expressSanitizer = require("express-sanitizer");
 var mongoose   = require("mongoose");
 var methodOverride = require("method-override");
 
-
+mongoose.connect("mongodb://tochi:onyeamah@ds259105.mlab.com:59105/tochi_students");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.use(express.static("public"));
